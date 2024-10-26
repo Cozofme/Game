@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couples Truth or Lie Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>💕 Couples Truth or Lie Game 💕</h1>
+        <div id="creation-section">
+            <h2>Create Questions</h2>
+            <textarea id="statements" rows="5" placeholder="Write one truth and three lies here... (separate by new lines)"></textarea>
+            <input type="number" id="truthIndex" placeholder="Index of the true statement (1-4)">
+            <button onclick="generateLink()">Generate Link</button>
+            <p id="shareLink"></p>
+        </div>
+        <div id="answer-section" style="display:none;">
+            <h2>Guess the Truth!</h2>
+            <div id="statementsList"></div>
+            <p id="message"></p>
+            <button onclick="createOwn()">Create Your Own Set</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
